@@ -1,7 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from tkinter import *
-from tkinter import ttk
+from tkinter import *, ttk
 from PIL import Image, ImageTk 
 import time, re
 
@@ -95,4 +94,5 @@ show_password_var = BooleanVar()
 showpass = ttk.Checkbutton(tk,text="Show/Hide Password", variable=show_password_var,command=show_password, cursor="hand2", style="Custom.TCheckbutton").place(x=90, y=300)
 Button(tk ,text="Start",command=Start, width=40, height=10, bg= "white", cursor="hand2").place(x=60,y=360)
 Label(tk,text="By Ali Hüseyinoğlu 😉😁", font= 10, bg="#262626", fg="gold").place(x=220, y=525)
+
 tk.mainloop()
